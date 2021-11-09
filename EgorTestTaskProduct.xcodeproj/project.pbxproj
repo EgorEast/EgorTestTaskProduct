@@ -12,9 +12,6 @@
 		2B26099D273A791C00344F89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B26099B273A791C00344F89 /* Main.storyboard */; };
 		2B26099F273A791D00344F89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B26099E273A791D00344F89 /* Assets.xcassets */; };
 		2B2609A2273A791D00344F89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B2609A0273A791D00344F89 /* LaunchScreen.storyboard */; };
-		2B2609AD273A791E00344F89 /* EgorTestTaskProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2609AC273A791E00344F89 /* EgorTestTaskProductTests.swift */; };
-		2B2609B7273A791E00344F89 /* EgorTestTaskProductUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2609B6273A791E00344F89 /* EgorTestTaskProductUITests.swift */; };
-		2B2609B9273A791E00344F89 /* EgorTestTaskProductUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2609B8273A791E00344F89 /* EgorTestTaskProductUITestsLaunchTests.swift */; };
 		2B2609C6273A796A00344F89 /* ListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2609C5273A796A00344F89 /* ListTVC.swift */; };
 		2B2609D9273A8C1D00344F89 /* NetworkProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2609D8273A8C1D00344F89 /* NetworkProductManager.swift */; };
 		2B2609DB273A8C7A00344F89 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2609DA273A8C7A00344F89 /* Product.swift */; };
@@ -49,10 +46,7 @@
 		2B2609A1273A791D00344F89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B2609A3273A791D00344F89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B2609A8273A791E00344F89 /* EgorTestTaskProductTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EgorTestTaskProductTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B2609AC273A791E00344F89 /* EgorTestTaskProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EgorTestTaskProductTests.swift; sourceTree = "<group>"; };
 		2B2609B2273A791E00344F89 /* EgorTestTaskProductUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EgorTestTaskProductUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B2609B6273A791E00344F89 /* EgorTestTaskProductUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EgorTestTaskProductUITests.swift; sourceTree = "<group>"; };
-		2B2609B8273A791E00344F89 /* EgorTestTaskProductUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EgorTestTaskProductUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2B2609C5273A796A00344F89 /* ListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTVC.swift; sourceTree = "<group>"; };
 		2B2609D8273A8C1D00344F89 /* NetworkProductManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProductManager.swift; sourceTree = "<group>"; };
 		2B2609DA273A8C7A00344F89 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -90,8 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				2B260994273A791C00344F89 /* EgorTestTaskProduct */,
-				2B2609AB273A791E00344F89 /* EgorTestTaskProductTests */,
-				2B2609B5273A791E00344F89 /* EgorTestTaskProductUITests */,
 				2B260993273A791C00344F89 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,23 +106,6 @@
 				2B2609D7273A8A7F00344F89 /* Supporting Files */,
 			);
 			path = EgorTestTaskProduct;
-			sourceTree = "<group>";
-		};
-		2B2609AB273A791E00344F89 /* EgorTestTaskProductTests */ = {
-			isa = PBXGroup;
-			children = (
-				2B2609AC273A791E00344F89 /* EgorTestTaskProductTests.swift */,
-			);
-			path = EgorTestTaskProductTests;
-			sourceTree = "<group>";
-		};
-		2B2609B5273A791E00344F89 /* EgorTestTaskProductUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2B2609B6273A791E00344F89 /* EgorTestTaskProductUITests.swift */,
-				2B2609B8273A791E00344F89 /* EgorTestTaskProductUITestsLaunchTests.swift */,
-			);
-			path = EgorTestTaskProductUITests;
 			sourceTree = "<group>";
 		};
 		2B2609D5273A8A4F00344F89 /* Model */ = {
@@ -312,7 +287,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B2609AD273A791E00344F89 /* EgorTestTaskProductTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,8 +294,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B2609B9273A791E00344F89 /* EgorTestTaskProductUITestsLaunchTests.swift in Sources */,
-				2B2609B7273A791E00344F89 /* EgorTestTaskProductUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
