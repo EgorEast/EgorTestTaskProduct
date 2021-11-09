@@ -53,6 +53,27 @@ class ListTVC: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             
+            let currentCell: UITableViewCell = sender as! UITableViewCell
+            
+            let originalFrame = currentCell.frame
+            let center = currentCell.center
+            let cellContentView = currentCell.contentView
+            
+            UIView.animate(withDuration: 4) {
+                var cellFrame = currentCell.frame
+                cellFrame.size.height = cellFrame.size.height + 88
+                cellFrame.origin.y = cellFrame.origin.y - 44
+                
+                currentCell.center = center
+                
+                cellContentView.frame.origin.y = 44
+                
+                currentCell.frame = cellFrame
+                
+            } completion: { (bool) in
+                currentCell.frame = originalFrame
+            }
+            
             guard let indexPath = tableView.indexPathForSelectedRow else { return }
             
             let product = productsArray[indexPath.row]
