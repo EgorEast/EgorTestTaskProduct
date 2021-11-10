@@ -50,6 +50,8 @@ class ListTVC: UITableViewController {
         return cell
     }
     
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             
@@ -80,7 +82,6 @@ class ListTVC: UITableViewController {
             let dstVC = segue.destination as! DetailVC
             
             dstVC.productModel = product
-            
         }
     }
 }

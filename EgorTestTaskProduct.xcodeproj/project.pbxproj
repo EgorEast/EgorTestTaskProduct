@@ -18,6 +18,7 @@
 		2B2609DD273A8CA900344F89 /* ProductData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2609DC273A8CA900344F89 /* ProductData.swift */; };
 		2B2609DF273A91AD00344F89 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2609DE273A91AD00344F89 /* ListCell.swift */; };
 		2B2609E1273A97A400344F89 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2609E0273A97A400344F89 /* DetailVC.swift */; };
+		2B2609ED273BC52300344F89 /* ScaleSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2609EC273BC52300344F89 /* ScaleSegue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		2B2609DC273A8CA900344F89 /* ProductData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductData.swift; sourceTree = "<group>"; };
 		2B2609DE273A91AD00344F89 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		2B2609E0273A97A400344F89 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		2B2609EC273BC52300344F89 /* ScaleSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleSegue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			children = (
 				2B2609C5273A796A00344F89 /* ListTVC.swift */,
 				2B2609E0273A97A400344F89 /* DetailVC.swift */,
+				2B2609EC273BC52300344F89 /* ScaleSegue.swift */,
 				2B26099B273A791C00344F89 /* Main.storyboard */,
 				2B2609A0273A791D00344F89 /* LaunchScreen.storyboard */,
 			);
@@ -274,6 +277,7 @@
 			files = (
 				2B2609D9273A8C1D00344F89 /* NetworkProductManager.swift in Sources */,
 				2B2609C6273A796A00344F89 /* ListTVC.swift in Sources */,
+				2B2609ED273BC52300344F89 /* ScaleSegue.swift in Sources */,
 				2B2609DB273A8C7A00344F89 /* Product.swift in Sources */,
 				2B2609DF273A91AD00344F89 /* ListCell.swift in Sources */,
 				2B260996273A791C00344F89 /* AppDelegate.swift in Sources */,
