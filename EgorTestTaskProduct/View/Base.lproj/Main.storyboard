@@ -18,14 +18,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="EPa-Tu-Cnj" customClass="ListCell" customModule="EgorTestTaskProduct" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EPa-Tu-Cnj" id="t0o-eI-wXz">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUZ-Jm-mHz">
-                                            <rect key="frame" x="20" y="12" width="239" height="22.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="239" translatesAutoresizingMaskIntoConstraints="NO" id="lUZ-Jm-mHz">
+                                            <rect key="frame" x="20" y="12" width="239" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="239" id="qd4-Ng-kHC"/>
                                             </constraints>
@@ -33,19 +33,19 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eo5-Eo-2RR">
-                                            <rect key="frame" x="275" y="11" width="60" height="22"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="F4k-Ae-Rnw">
+                                            <rect key="frame" x="321" y="10" width="73" height="22"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="rh0-db-U97"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="54" id="H3g-jX-10t"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4k-Ae-Rnw">
-                                            <rect key="frame" x="340" y="9" width="54" height="21.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eo5-Eo-2RR">
+                                            <rect key="frame" x="275" y="11" width="47" height="21.5"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="54" id="H3g-jX-10t"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="47" id="rh0-db-U97"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -54,17 +54,18 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="lUZ-Jm-mHz" firstAttribute="leading" secondItem="t0o-eI-wXz" secondAttribute="leading" constant="20" symbolic="YES" id="9Hi-pM-vys"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="eo5-Eo-2RR" secondAttribute="trailing" constant="72" id="Fh0-aN-KCe"/>
                                         <constraint firstItem="eo5-Eo-2RR" firstAttribute="bottom" secondItem="t0o-eI-wXz" secondAttribute="bottomMargin" id="HHN-Z6-JuT"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="F4k-Ae-Rnw" secondAttribute="bottom" constant="2.5" id="HKU-eO-CEy"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="F4k-Ae-Rnw" secondAttribute="bottom" constant="0.5" id="HKU-eO-CEy"/>
                                         <constraint firstItem="eo5-Eo-2RR" firstAttribute="leading" secondItem="lUZ-Jm-mHz" secondAttribute="trailing" constant="16" id="IxS-3W-U8X"/>
                                         <constraint firstAttribute="trailing" secondItem="F4k-Ae-Rnw" secondAttribute="trailing" constant="20" symbolic="YES" id="KlD-yW-LQs"/>
                                         <constraint firstItem="eo5-Eo-2RR" firstAttribute="top" secondItem="t0o-eI-wXz" secondAttribute="topMargin" id="UcV-YC-oXZ"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="lUZ-Jm-mHz" secondAttribute="bottom" constant="-1.5" id="aQZ-6O-nsN"/>
-                                        <constraint firstItem="F4k-Ae-Rnw" firstAttribute="top" secondItem="t0o-eI-wXz" secondAttribute="topMargin" constant="-2" id="fbH-g3-D7d"/>
+                                        <constraint firstItem="F4k-Ae-Rnw" firstAttribute="top" secondItem="t0o-eI-wXz" secondAttribute="topMargin" constant="-1" id="fbH-g3-D7d"/>
                                         <constraint firstItem="lUZ-Jm-mHz" firstAttribute="top" secondItem="t0o-eI-wXz" secondAttribute="topMargin" constant="1" id="gm0-Fe-tPm"/>
-                                        <constraint firstItem="F4k-Ae-Rnw" firstAttribute="leading" secondItem="eo5-Eo-2RR" secondAttribute="trailing" constant="5" id="sqg-jo-sEc"/>
+                                        <constraint firstItem="F4k-Ae-Rnw" firstAttribute="leading" secondItem="eo5-Eo-2RR" secondAttribute="trailing" constant="-1" id="sqg-jo-sEc"/>
                                         <constraint firstItem="F4k-Ae-Rnw" firstAttribute="trailing" secondItem="t0o-eI-wXz" secondAttribute="trailingMargin" id="vHU-b6-4TA"/>
-                                        <constraint firstItem="F4k-Ae-Rnw" firstAttribute="leading" secondItem="eo5-Eo-2RR" secondAttribute="trailing" constant="5" id="zCA-hR-eWc"/>
+                                        <constraint firstItem="F4k-Ae-Rnw" firstAttribute="leading" secondItem="eo5-Eo-2RR" secondAttribute="trailing" constant="-1" id="zCA-hR-eWc"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -149,7 +150,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="vgb-Ic-kGf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vgb-Ic-kGf">
                                 <rect key="frame" x="150" y="502" width="244" height="267"/>
                                 <string key="text">Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight &amp; soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
