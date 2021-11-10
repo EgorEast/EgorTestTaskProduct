@@ -9,8 +9,8 @@ import UIKit
 
 class ListTVC: UITableViewController {
     
-    let networkProductManager = NetworkProductManager()
-    var productsArray: [Product] = []
+    private let networkProductManager = NetworkProductManager()
+    private var productsArray: [Product] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +18,7 @@ class ListTVC: UITableViewController {
         addProducts()
     }
 
-    func addProducts() {
+    private func addProducts() {
         networkProductManager.fetchProducts {  products in
 
             products.forEach({ product in

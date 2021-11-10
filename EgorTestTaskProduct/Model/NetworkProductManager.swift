@@ -36,7 +36,7 @@ struct NetworkProductManager {
         task.resume()
     }
     
-    func parseJSON(withData data: Data) -> [Product?] {
+    private func parseJSON(withData data: Data) -> [Product?] {
         let decoder = JSONDecoder()
         
         do {

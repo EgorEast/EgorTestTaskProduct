@@ -26,11 +26,12 @@ class DetailVC: UIViewController {
         refreshLabels()
     }
     
-    func refreshLabels() {
+    private func refreshLabels() {
         titleProductLabel.text = productModel?.title
         if let url = URL(string: (productModel?.image)!){
             imageProductView.load(url: url)
         }
+
         priceProductLabel.text = "\((productModel?.price)!)"
         descriptionProductLabel.text = productModel?.description
         categoryProductLabel.text = "\((productModel?.category.rawValue)!)"
